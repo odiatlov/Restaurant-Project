@@ -78,7 +78,7 @@ namespace ReactAspx.Controllers
                     Session["UserId"] = usr.Id;
                     ViewBag.Email = usr.Email;
                     ViewBag.UserId = usr.Id;
-
+                    return RedirectToAction("Index", "Home"); //redirect to the home page
                 }
                 else
                 {
